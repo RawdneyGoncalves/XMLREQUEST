@@ -12,10 +12,12 @@ app.get("/login", function (req, res) {
 
 app.get("/inicio", function (req, res) {
   res.render("inicio");
+  // console.log(inicio)
 });
-app.post("/inicio", function (req, reas) {
+app.post("/inicio", function (req, res) {
   let token = req.body.token;
-  console.log(` essa porra do token ta aqui ${token}`);
+  console.log(` o token tá rodando aqui:  ${token}`);
+  
 });
 // configuracao
 const PORT = process.env.PORT || 5000;
